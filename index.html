@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Importacion Normalize-->
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Importacion Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400&family=Patrick+Hand&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!--Importacion CSS-->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <h3>Header Prueba</h3>
+    </header>
+
+    <nav class="navegacion">
+        <a class="enlace" href="#">Juegos</a>
+        <a class="enlace" href="#">Iniciar Sesión</a>
+    </nav>
+
+    
+        <div class="center">
+            <h1>¡Bienvenidos/as al juego!</h1>
+        </div>
+
+    <main class="contenidoPrincipal">
+
+        <div class="contenidoPrincipal__juego">
+            <h2>Juego "Uno a Uno"</h2>
+
+        <!--Ojetivo del juego-->
+            <div class="contenidoPrincipal__juego--objetivo">
+                <h3>Objetivo:</h3>
+                <p> Que quede solo una clavija en el tablero, preferentemente la del centro.</p>
+                <p>Si lograste dejar una sola ¡Sos un/a campeón/a</p>
+                <p>Y si encima es la del centro, ¡Sos un/a genio/a!</p>
+            </div>
+
+        <!--Reglas del juego-->
+            <div class="contenidoPrincipal__juego--reglas">
+                <h3>¿Cómo jugar?:</h3>
+                <ol>
+                    <li>
+                        Seleccioná una clavija y pasala por encima de otra para ubicarla en el espacio vacio. Recordá quesólo podrás realizar movimientos horizontales y verticales.
+                    </li>
+                    <li>
+                        Automáticamente, las clavijas "comidas" se colocaán en la cesta, y el contador te indicará cuántas te quedan en el tablero
+                    </li>
+                    <li>
+                        Continúa "comiendo" clavijas, mientras sea posible.
+                    </li>
+                    <li>
+                        ¿Cuántas te quedaron?
+                    </li>
+                </ol>
+            </div> 
+
+        </div>
+
+        <div class="contenidoPrincipal_tablero">
+            <table id="tablero" class="fondo">
+                <thead>
+        
+                </thead>
+                <tbody id="tablero-datos">
+                    
+                </tbody>
+            </table>
+
+            <input class="boton-final" type="submit" onclick="volverAIntentar()" value="Reestablecer tablero">
+        </div>
+
+    </main>
+
+    <section>
+        <div>
+            <p>CESTA Y CONTEO</p>
+        </div>
+    </section>
+
+    <footer>
+        Todos los derechos reservados. Front-End Agostina, Back-End Lautaro. 2022.
+    </footer>  
+    
+</body>
+
+
+
+<script src="main.js"></script>
+
+</html>
