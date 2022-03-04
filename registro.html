@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Importacion Normalize-->
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Importacion Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400&family=Patrick+Hand&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!--Importacion CSS-->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header" >
+        <a href="bienvenido.html">
+            <img class="header__logo"src="img/logogame.png" alt="Logo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Juegos</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="#">Iniciar Sesión</a>
+    </nav>
+
+    <main class="contenedor">
+        
+        <div class="sombra">
+
+            <div class="titulo">
+                <h1>¡Formá parte de nuestra comunidad!</h1>
+            </div>
+
+             <!-- Para Registrarse-->
+            <div class="formulario">
+                <form>
+                    <fieldset class="formulario__fieldset">
+                        <legend class="formulario__legend">Completa los siguientes campos</legend>
+
+                        <div class="contenedorCampos">
+
+                            <div class="campo">
+                                <label class="campo__label">Usuario</label>
+                                <input class="campo__label--input" type="text" placeholder="Nombre">
+                                    <h5 class="miniDescripcion">Podés utilizar letras, números y puntos</h5>
+                            </div>
+                            
+                            <div class="campo">
+                                <label class="campo__label">Contraseña</label>
+                                <input clas="campo__label--input" type="text" placeholder="Contraseña">
+                            </div>
+
+                            <div class="campo">
+                                <input clas="campo__label--input" type="text" placeholder="Confirmación">
+                                    <h5 class="miniDescripcion">Utiliza al menos ocho caracteres combinando letras, números y símbolos</h5>
+                            </div>
+                                
+                            
+
+                        </div>
+
+                            <input type="checkbox"> <h5 class="miniDescripcion">Mostrar contraseña</h5>
+                        
+                        
+                        
+                        <div class="botonesPrincipales">
+                            <button class="boton__principal boton__principal--texto">Registrarme</button>  
+                        </div>
+                                
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+   
+
+    <footer class="footer">
+        Todos los derechos reservados. Front-End Agostina, Back-End Lautaro. 2022.
+    </footer>  
+
+</body>
+</html>

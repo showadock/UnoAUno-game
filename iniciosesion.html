@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Importacion Normalize-->
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Importacion Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400&family=Patrick+Hand&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <!--Importacion CSS-->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header" >
+        <a href="bienvenido.html">
+            <img class="header__logo"src="img/logogame.png" alt="Logo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Juegos</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="#">Iniciar Sesión</a>
+    </nav>
+
+    <!--Para Iniciar Sesión-->
+    <input type="text" placeholder="Nombre de usuario">
+    <input type="text" placeholder="Contraseña">
+    <input type="submit" value="Ingresar">
+    <a href="#">¿Olvidaste la contraseña?</a>
+    
+</body>
+</html>

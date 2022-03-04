@@ -20,19 +20,15 @@
 </head>
 
 <body>
-    <header class="header">
-        <h3>Header Prueba</h3>
+    <header class="header" >
+        <a href="bienvenido.html">
+            <img class="header__logo"src="img/logogame.png" alt="Logo">
+        </a>
     </header>
-
     <nav class="navegacion">
-        <a class="enlace" href="#">Juegos</a>
-        <a class="enlace" href="#">Iniciar Sesión</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="#">Juegos</a>
+        <a class="navegacion__enlace" href="#">Iniciar Sesión</a>
     </nav>
-
-    
-        <div class="center">
-            <h1>¡Bienvenidos/as al juego!</h1>
-        </div>
 
     <main class="contenidoPrincipal">
 
@@ -69,7 +65,7 @@
         </div>
 
         <div class="contenidoPrincipal_tablero">
-            <table id="tablero" class="fondo">
+            <table id="tablero" class="tablero--fondo">
                 <thead>
         
                 </thead>
@@ -78,7 +74,7 @@
                 </tbody>
             </table>
 
-            <input class="boton-final" type="submit" onclick="volverAIntentar()" value="Reestablecer tablero">
+            <input class="boton--final" type="submit" onclick="volverAIntentar()" value="Reestablecer tablero">
         </div>
 
     </main>
@@ -89,7 +85,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         Todos los derechos reservados. Front-End Agostina, Back-End Lautaro. 2022.
     </footer>  
     
