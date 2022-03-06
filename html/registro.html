@@ -7,15 +7,15 @@
     <title>Document</title>
 
     <!--Importacion Normalize-->
-    <link rel="preload" href="normalize.css" as="style">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/ccs/normalize.css">
 
     <!--Importacion Fuente-->
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400&family=Patrick+Hand&family=Rubik:wght@300&display=swap" rel="stylesheet">
 
     <!--Importacion CSS-->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
@@ -23,7 +23,7 @@
 
     <header class="header" >
         <a href="bienvenido.html">
-            <img class="header__logo"src="img/logogame.png" alt="Logo">
+            <img class="header__logo"src="../img/logogame.png" alt="Logo">
         </a>
     </header>
 
@@ -50,28 +50,35 @@
 
                             <div class="campo">
                                 <label class="campo__label">Usuario</label>
-                                <input class="campo__label--input" type="text" placeholder="Nombre">
-                                    <h5 class="miniDescripcion">Podés utilizar letras, números y puntos</h5>
+                                <input class="campo__label--nombre" type="text" placeholder="Nombre">
+                                <!--<h5 class="miniDescripcion">Podés utilizar letras, números y puntos</h5>-->
                             </div>
                             
                             <div class="campo">
                                 <label class="campo__label">Contraseña</label>
-                                <input clas="campo__label--input" type="text" placeholder="Contraseña">
+                                <input class="campo__label--contra" type="text" placeholder="Contraseña">
                             </div>
 
                             <div class="campo">
-                                <input clas="campo__label--input" type="text" placeholder="Confirmación">
-                                    <h5 class="miniDescripcion">Utiliza al menos ocho caracteres combinando letras, números y símbolos</h5>
+                                <label class="campo__label transparente">Confirmacion</label>
+                                <input class="campo__label--confirmacion" type="text" placeholder="Confirmación">
+                                <!--<h5 class="miniDescripcion">Utiliza al menos ocho caracteres combinando letras, números y símbolos</h5>-->
                             </div>
-                                
-                            
 
                         </div>
 
-                            <input type="checkbox"> <h5 class="miniDescripcion">Mostrar contraseña</h5>
+                        <div class="visualizacion">
+                            <div class="viasualizacion__checkbox">
+                                <input type="checkbox" value="mostrarContraseña">
+                            </div>
+                            <div class="viasualizacion__texto">
+                                <h5 class="miniDescripcion">Mostrar contraseña</h5>
+                            </div>
+                        </div>
                         
-                        
-                        
+                            
+                            
+
                         <div class="botonesPrincipales">
                             <button class="boton__principal boton__principal--texto">Registrarme</button>  
                         </div>
